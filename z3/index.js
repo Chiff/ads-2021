@@ -19,9 +19,11 @@ const handleData = (file) => {
     perf.start();
 
 
-    input.splice(1).forEach((row, i) => {
+    input.forEach((row, i) => {
+        if (i === 0) return;
+
         row.forEach((value, ii) => {
-            const prevRow = input[i -1]
+            const prevRow = input[i - 1];
             const options = [
                 value + prevRow[ii + 1],
                 value + prevRow[ii],
@@ -32,7 +34,7 @@ const handleData = (file) => {
         });
     });
 
-    const res = Math.min(...input.reverse()[0])
+    const res = Math.min(...input.reverse()[0]);
 
 
     console.log(chalk.blue(`Execution time: ${perf.stop().time}ms`));
