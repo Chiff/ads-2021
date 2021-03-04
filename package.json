@@ -1,0 +1,10 @@
+{
+  "name": "zadania",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "execution-time": "^1.4.1"
+  }
+}
