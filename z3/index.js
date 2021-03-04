@@ -1,10 +1,12 @@
 const fs = require('fs');
 const perf = require('execution-time')();
 const chalk = require('chalk');
+const logger = require('simple-node-logger').createSimpleLogger('output.log');
+
 
 fs.readFile('cvicenie3data.txt', 'utf8', function (err, data) {
     if (err) {
-        return console.log(chalk.red(err));
+        return logger.error(chalk.red(err));
     }
 
     handleData(data);
@@ -36,9 +38,8 @@ const handleData = (file) => {
 
     const res = Math.min(...input.reverse()[0]);
 
-
-    console.log(chalk.blue(`Execution time: ${perf.stop().time}ms`));
-    console.log(chalk.green(`Minimal: ${res}`));
+    logger.info(chalk.blue(`Execution time: ${perf.stop().time}ms`));
+    logger.info(chalk.green(`Minimal: ${res}`));
 };
 
 

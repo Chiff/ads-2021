@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
-    "execution-time": "^1.4.1"
+    "execution-time": "^1.4.1",
+    "simple-node-logger": "^18.12.24"
   }
 }

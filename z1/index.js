@@ -1,8 +1,9 @@
 const fs = require('fs');
+const logger = require('simple-node-logger').createSimpleLogger('output.log');
 
 fs.readFile('cvicenie1data.txt', 'utf8', function (err, data) {
     if (err) {
-        return console.log(err);
+        return logger.error(err);
     }
 
     readData(data);
@@ -24,7 +25,7 @@ const readData = (data) => {
     let sum, sums, choices;
     let its = 0;
 
-    const start = new Date()
+    const start = new Date();
     while (true) {
         sum = 0;
         sums = [];
@@ -48,13 +49,13 @@ const readData = (data) => {
         }
     }
 
-    console.log('progress:');
-    console.log(sums);
-    console.log('choices:');
-    console.log(choices);
-    console.log('res:', sum);
-    console.log('its:', its);
-    console.log('Execution time: %dms', new Date() -  start)
+    logger.info('progress:');
+    logger.info(sums);
+    logger.info('choices:');
+    logger.info(choices);
+    logger.info('res:', sum);
+    logger.info('its:', its);
+    logger.info('Execution time: %dms', new Date() - start);
 };
 
 const sumAbs = (acc, curr) => Math.abs(curr) + acc;

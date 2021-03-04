@@ -1,10 +1,11 @@
 const fs = require('fs');
 const perf = require('execution-time')();
 const chalk = require('chalk');
+const logger = require('simple-node-logger').createSimpleLogger('output.log');
 
 fs.readFile('cvicenie2data.txt', 'utf8', function (err, data) {
     if (err) {
-        return console.log(chalk.red(err));
+        return logger.error(chalk.red(err));
     }
 
     handleData(data);
@@ -29,7 +30,7 @@ const handleData = (file) => {
         }, pens[i]);
     });
 
-    console.log(chalk.blue(`Execution time: ${perf.stop().time}ms`));
-    console.log(chalk.green(`Penalty: ${pens.reverse()[0]}`));
+    logger.info(chalk.blue(`Execution time: ${perf.stop().time}ms`));
+    logger.info(chalk.green(`Penalty: ${pens.reverse()[0]}`));
 };
 
