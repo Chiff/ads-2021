@@ -1,4 +1,4 @@
-##Algorithms and data structures
+## Algorithms and data structures
 ### 2020/2021, FEI STU - API
 
 ```
