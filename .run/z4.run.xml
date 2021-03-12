@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="z4" type="NodeJSConfigurationType" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/z4">
+    <output_file path="output" />
+    <method v="2" />
+  </configuration>
+</component>
