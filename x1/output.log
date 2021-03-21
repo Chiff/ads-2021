@@ -1,0 +1,15 @@
+21:03:32.516 INFO  Sum of probs: 0.9994224061864072 - should be = 1 
+21:03:32.517 INFO  [33mBST created in 65.4667ms[39m 
+21:03:33.179 INFO  [32m[of] 	- found WORD at level 1[39m 
+21:03:33.179 INFO  [32m[which] 	- found WORD at level 6[39m 
+21:03:33.179 INFO  [32m[development] 	- found DUMMY at level 8[39m 
+21:03:33.179 INFO  [32m[could] 	- found WORD at level 5[39m 
+21:03:33.179 INFO  [32m[the] 	- found WORD at level 2[39m 
+21:03:33.179 INFO  [32m[government] 	- found WORD at level 10[39m 
+21:03:33.179 INFO  [32m[governmental] 	- found DUMMY at level 11[39m 
+21:03:33.179 INFO  [32m[noop] 	- found DUMMY at level 9[39m 
+21:03:33.179 INFO  [34mSearch time: 0.2995ms; words=of,which,development,could,the,government,governmental,noop[39m 
+21:03:33.187 INFO  dump data > tmp_root.txt 
+21:03:33.187 INFO  dump data > tmp_prob.txt 
+21:03:33.188 INFO  draw tree > tree.jpg 
+21:03:33.188 INFO  dump data > tmp_cost.txt 
