@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="x3" type="NodeJSConfigurationType" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/x3">
+    <method v="2" />
+  </configuration>
+</component>
